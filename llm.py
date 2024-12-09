@@ -25,7 +25,6 @@ def llm_generate(sys_prompt,input_text):
     session.trust_env = True
 
     response = session.post(f"{OPENAI_API_BASE}/chat/completions", headers=headers, data=json.dumps(data))
-    print("response", response)
     response_data = response.json()
 
     # Extract the response from the API
