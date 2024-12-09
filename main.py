@@ -2,7 +2,7 @@ import subprocess
 import os
 from datetime import datetime
 from crawler_utils import start_crawler
-from rag_utils import retrieve_info, load_documents
+from rag_utils import load_documents
 from config import *
 from prompt import *
 from llm import llm_generate, generate_prompt_with_knowledge
